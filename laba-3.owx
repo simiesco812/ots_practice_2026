@@ -1,413 +1,381 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://example.org/family"
+     xml:base="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-5"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://example.org/family">
-    <Prefix name="" IRI="http://example.org/family/"/>
+     ontologyIRI="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/пк/ontologies/2026/9/untitled-ontology-5/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Man"/>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movie"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Woman"/>
+        <Class IRI="#Session"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasChild"/>
+        <Class IRI="#Ticket"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isChildOf"/>
+        <Class IRI="#Viewer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isDaughterOf"/>
+        <ObjectProperty IRI="#buysTicket"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isGranddaughterOf"/>
+        <ObjectProperty IRI="#forSession"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isGrandsonOf"/>
+        <ObjectProperty IRI="#hasGenre"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isSonOf"/>
+        <ObjectProperty IRI="#sameClub"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sameGenreAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sharesInterestWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showsMovie"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#watchedMovie"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasYear"/>
+        <DataProperty IRI="#hasTitle"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Aleksandr"/>
+        <DataProperty IRI="#ticketPrice"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Lev"/>
+        <NamedIndividual IRI="#Action"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Maria"/>
+        <NamedIndividual IRI="#Anna"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Nadezhda"/>
+        <NamedIndividual IRI="#Drama"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Olga"/>
+        <NamedIndividual IRI="#Ivan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Sergei"/>
+        <NamedIndividual IRI="#Movie_Avatar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movie_Avatar2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movie_Oppenheimer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oleg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Session_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Session_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ticket_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ticket_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ticket_3"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Man"/>
+        <Class IRI="#Viewer"/>
         <Class IRI="#Person"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Woman"/>
-        <Class IRI="#Person"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Man"/>
-        <Class IRI="#Woman"/>
-    </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Man"/>
-        <NamedIndividual IRI="#Aleksandr"/>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Action"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Aleksandr"/>
+        <NamedIndividual IRI="#Anna"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Man"/>
-        <NamedIndividual IRI="#Lev"/>
+        <Class IRI="#Viewer"/>
+        <NamedIndividual IRI="#Anna"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Lev"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Maria"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Woman"/>
-        <NamedIndividual IRI="#Maria"/>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Drama"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Nadezhda"/>
+        <NamedIndividual IRI="#Ivan"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Woman"/>
-        <NamedIndividual IRI="#Nadezhda"/>
+        <Class IRI="#Viewer"/>
+        <NamedIndividual IRI="#Ivan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Movie_Avatar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Movie_Avatar2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Movie_Oppenheimer"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Olga"/>
+        <NamedIndividual IRI="#Oleg"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Woman"/>
-        <NamedIndividual IRI="#Olga"/>
+        <Class IRI="#Viewer"/>
+        <NamedIndividual IRI="#Oleg"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Man"/>
-        <NamedIndividual IRI="#Sergei"/>
+        <Class IRI="#Session"/>
+        <NamedIndividual IRI="#Session_A"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Person"/>
-        <NamedIndividual IRI="#Sergei"/>
+        <Class IRI="#Session"/>
+        <NamedIndividual IRI="#Session_B"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Ivan"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Oleg"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ivan"/>
+        <NamedIndividual IRI="#Oleg"/>
+    </DifferentIndividuals>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isChildOf"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-        <NamedIndividual IRI="#Nadezhda"/>
+        <ObjectProperty IRI="#buysTicket"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Ticket_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isChildOf"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-        <NamedIndividual IRI="#Sergei"/>
+        <ObjectProperty IRI="#watchedMovie"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Movie_Avatar"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isGrandsonOf"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-        <NamedIndividual IRI="#Lev"/>
+        <ObjectProperty IRI="#buysTicket"/>
+        <NamedIndividual IRI="#Ivan"/>
+        <NamedIndividual IRI="#Ticket_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isGrandsonOf"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-        <NamedIndividual IRI="#Maria"/>
+        <ObjectProperty IRI="#watchedMovie"/>
+        <NamedIndividual IRI="#Ivan"/>
+        <NamedIndividual IRI="#Movie_Avatar"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isSonOf"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-        <NamedIndividual IRI="#Nadezhda"/>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Movie_Avatar"/>
+        <NamedIndividual IRI="#Action"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isSonOf"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-        <NamedIndividual IRI="#Sergei"/>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Movie_Avatar2"/>
+        <NamedIndividual IRI="#Action"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasChild"/>
-        <NamedIndividual IRI="#Lev"/>
-        <NamedIndividual IRI="#Nadezhda"/>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Movie_Oppenheimer"/>
+        <NamedIndividual IRI="#Drama"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasChild"/>
-        <NamedIndividual IRI="#Lev"/>
-        <NamedIndividual IRI="#Sergei"/>
+        <ObjectProperty IRI="#buysTicket"/>
+        <NamedIndividual IRI="#Oleg"/>
+        <NamedIndividual IRI="#Ticket_3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasChild"/>
-        <NamedIndividual IRI="#Maria"/>
-        <NamedIndividual IRI="#Nadezhda"/>
+        <ObjectProperty IRI="#watchedMovie"/>
+        <NamedIndividual IRI="#Oleg"/>
+        <NamedIndividual IRI="#Movie_Oppenheimer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasChild"/>
-        <NamedIndividual IRI="#Maria"/>
-        <NamedIndividual IRI="#Sergei"/>
+        <ObjectProperty IRI="#showsMovie"/>
+        <NamedIndividual IRI="#Session_A"/>
+        <NamedIndividual IRI="#Movie_Avatar"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasChild"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-        <NamedIndividual IRI="#Aleksandr"/>
+        <ObjectProperty IRI="#showsMovie"/>
+        <NamedIndividual IRI="#Session_B"/>
+        <NamedIndividual IRI="#Movie_Oppenheimer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasChild"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-        <NamedIndividual IRI="#Olga"/>
+        <ObjectProperty IRI="#forSession"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+        <NamedIndividual IRI="#Session_A"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isChildOf"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-        <NamedIndividual IRI="#Lev"/>
+        <ObjectProperty IRI="#forSession"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+        <NamedIndividual IRI="#Session_A"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isChildOf"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-        <NamedIndividual IRI="#Maria"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDaughterOf"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-        <NamedIndividual IRI="#Lev"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDaughterOf"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-        <NamedIndividual IRI="#Maria"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isChildOf"/>
-        <NamedIndividual IRI="#Olga"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isChildOf"/>
-        <NamedIndividual IRI="#Olga"/>
-        <NamedIndividual IRI="#Sergei"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDaughterOf"/>
-        <NamedIndividual IRI="#Olga"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDaughterOf"/>
-        <NamedIndividual IRI="#Olga"/>
-        <NamedIndividual IRI="#Sergei"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isGranddaughterOf"/>
-        <NamedIndividual IRI="#Olga"/>
-        <NamedIndividual IRI="#Lev"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isGranddaughterOf"/>
-        <NamedIndividual IRI="#Olga"/>
-        <NamedIndividual IRI="#Maria"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasChild"/>
-        <NamedIndividual IRI="#Sergei"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasChild"/>
-        <NamedIndividual IRI="#Sergei"/>
-        <NamedIndividual IRI="#Olga"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isChildOf"/>
-        <NamedIndividual IRI="#Sergei"/>
-        <NamedIndividual IRI="#Lev"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isChildOf"/>
-        <NamedIndividual IRI="#Sergei"/>
-        <NamedIndividual IRI="#Maria"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isSonOf"/>
-        <NamedIndividual IRI="#Sergei"/>
-        <NamedIndividual IRI="#Lev"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isSonOf"/>
-        <NamedIndividual IRI="#Sergei"/>
-        <NamedIndividual IRI="#Maria"/>
+        <ObjectProperty IRI="#forSession"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+        <NamedIndividual IRI="#Session_B"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-        <Literal>Александр</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasYear"/>
-        <NamedIndividual IRI="#Aleksandr"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1799</Literal>
+        <NamedIndividual IRI="#Anna"/>
+        <Literal>Анна</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Lev"/>
-        <Literal>Лев</Literal>
+        <NamedIndividual IRI="#Ivan"/>
+        <Literal>Иван</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasYear"/>
-        <NamedIndividual IRI="#Lev"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1723</Literal>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Movie_Avatar"/>
+        <Literal>Avatar</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Maria"/>
-        <Literal>Мария</Literal>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Movie_Avatar2"/>
+        <Literal>Avatar: The Way of Water</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasYear"/>
-        <NamedIndividual IRI="#Maria"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1745</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-        <Literal>Надежда</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasYear"/>
-        <NamedIndividual IRI="#Nadezhda"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1775</Literal>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Movie_Oppenheimer"/>
+        <Literal>Oppenheimer</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Olga"/>
-        <Literal>Ольга</Literal>
+        <NamedIndividual IRI="#Oleg"/>
+        <Literal>Олег</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasYear"/>
-        <NamedIndividual IRI="#Olga"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1797</Literal>
+        <DataProperty IRI="#ticketPrice"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Sergei"/>
-        <Literal>Сергей</Literal>
+        <DataProperty IRI="#ticketPrice"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasYear"/>
-        <NamedIndividual IRI="#Sergei"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1770</Literal>
+        <DataProperty IRI="#ticketPrice"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
     </DataPropertyAssertion>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasChild"/>
-        <ObjectProperty IRI="#isChildOf"/>
-    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#sameClub"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#sameGenreAs"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#sharesInterestWith"/>
+    </SymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#sameClub"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#sameGenreAs"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#sharesInterestWith"/>
+    </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasChild"/>
+        <ObjectProperty IRI="#buysTicket"/>
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isChildOf"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#buysTicket"/>
+        <Class IRI="#Viewer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isDaughterOf"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#forSession"/>
+        <Class IRI="#Ticket"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isDaughterOf"/>
-        <Class IRI="#Woman"/>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Movie"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isGranddaughterOf"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isGranddaughterOf"/>
-        <Class IRI="#Woman"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isGrandsonOf"/>
-        <Class IRI="#Man"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isGrandsonOf"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isSonOf"/>
-        <Class IRI="#Man"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isSonOf"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#showsMovie"/>
+        <Class IRI="#Session"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasChild"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#buysTicket"/>
+        <Class IRI="#Ticket"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isChildOf"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#forSession"/>
+        <Class IRI="#Session"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isDaughterOf"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Genre"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isGranddaughterOf"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isGrandsonOf"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isSonOf"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#showsMovie"/>
+        <Class IRI="#Movie"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#hasName"/>
         <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasYear"/>
-        <Class IRI="#Person"/>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ticketPrice"/>
+        <Class IRI="#Ticket"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasYear"/>
+        <DataProperty IRI="#hasTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ticketPrice"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DLSafeRule>
@@ -417,33 +385,51 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>определение внука</Literal>
+            <Literal>общий жанр</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>InferGrandson</Literal>
+            <Literal>generalgenre</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
-                <Class IRI="#Man"/>
-                <Variable IRI="/x"/>
+                <Class IRI="#Movie"/>
+                <Variable IRI="/m1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Movie"/>
+                <Variable IRI="/m2"/>
             </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isChildOf"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/y"/>
+                <ObjectProperty IRI="#hasGenre"/>
+                <Variable IRI="/m1"/>
+                <Variable IRI="/g"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isChildOf"/>
-                <Variable IRI="/y"/>
-                <Variable IRI="/z"/>
+                <ObjectProperty IRI="#hasGenre"/>
+                <Variable IRI="/m2"/>
+                <Variable IRI="/g"/>
             </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasTitle"/>
+                <Variable IRI="/m1"/>
+                <Variable IRI="/title1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasTitle"/>
+                <Variable IRI="/m2"/>
+                <Variable IRI="/title2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#notEqual">
+                <Variable IRI="/title1"/>
+                <Variable IRI="/title2"/>
+            </BuiltInAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isGrandsonOf"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/z"/>
+                <ObjectProperty IRI="#sameGenreAs"/>
+                <Variable IRI="/m1"/>
+                <Variable IRI="/m2"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -454,33 +440,38 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>определение внучки</Literal>
+            <Literal>зритель посмотрел фильм</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>InferGranddaughter</Literal>
+            <Literal>watchfilm</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
-                <Class IRI="#Woman"/>
-                <Variable IRI="/x"/>
+                <Class IRI="#Viewer"/>
+                <Variable IRI="/v"/>
             </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isChildOf"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/y"/>
+                <ObjectProperty IRI="#buysTicket"/>
+                <Variable IRI="/v"/>
+                <Variable IRI="/t"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isChildOf"/>
-                <Variable IRI="/y"/>
-                <Variable IRI="/z"/>
+                <ObjectProperty IRI="#forSession"/>
+                <Variable IRI="/t"/>
+                <Variable IRI="/s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#showsMovie"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/m"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isGranddaughterOf"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/z"/>
+                <ObjectProperty IRI="#watchedMovie"/>
+                <Variable IRI="/v"/>
+                <Variable IRI="/m"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -491,24 +482,51 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>дочь является ребенком</Literal>
+            <Literal>киноклуб</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>DaughterlsChild</Literal>
+            <Literal>kinoclub</Literal>
         </Annotation>
         <Body>
+            <ClassAtom>
+                <Class IRI="#Viewer"/>
+                <Variable IRI="/v1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Viewer"/>
+                <Variable IRI="/v2"/>
+            </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isDaughterOf"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/y"/>
+                <ObjectProperty IRI="#buysTicket"/>
+                <Variable IRI="/v1"/>
+                <Variable IRI="/t1"/>
             </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forSession"/>
+                <Variable IRI="/t1"/>
+                <Variable IRI="/s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#buysTicket"/>
+                <Variable IRI="/v2"/>
+                <Variable IRI="/t2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forSession"/>
+                <Variable IRI="/t2"/>
+                <Variable IRI="/s"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="/v1"/>
+                <Variable IRI="/v2"/>
+            </DifferentIndividualsAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isChildOf"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/y"/>
+                <ObjectProperty IRI="#sameClub"/>
+                <Variable IRI="/v1"/>
+                <Variable IRI="/v2"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -519,24 +537,51 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>сын является ребенком</Literal>
+            <Literal>общий интерес</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>SonlsChild</Literal>
+            <Literal>interes</Literal>
         </Annotation>
         <Body>
+            <ClassAtom>
+                <Class IRI="#Viewer"/>
+                <Variable IRI="/v1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Viewer"/>
+                <Variable IRI="/v2"/>
+            </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isSonOf"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/y"/>
+                <ObjectProperty IRI="#buysTicket"/>
+                <Variable IRI="/v1"/>
+                <Variable IRI="/t1"/>
             </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forSession"/>
+                <Variable IRI="/t1"/>
+                <Variable IRI="/s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#buysTicket"/>
+                <Variable IRI="/v2"/>
+                <Variable IRI="/t2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#forSession"/>
+                <Variable IRI="/t2"/>
+                <Variable IRI="/s"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="/v1"/>
+                <Variable IRI="/v2"/>
+            </DifferentIndividualsAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isChildOf"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/y"/>
+                <ObjectProperty IRI="#sharesInterestWith"/>
+                <Variable IRI="/v1"/>
+                <Variable IRI="/v2"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
